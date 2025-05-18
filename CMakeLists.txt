@@ -11,4 +11,7 @@ add_executable(linguagem_c
         chap01/prog0105.c
         chap01/prog0106.c
         chap01/prog0107.c
-        chap01/prog0108.c)
+        chap01/prog0108.c
+        chap01/prog0109.c
+        chap01/prog0110.c
+        chap01/prog0111.c)
