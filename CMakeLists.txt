@@ -22,4 +22,10 @@ add_executable(linguagem_c
         chap02/prog0208.c
         chap02/prog0209.c
         chap02/prog0210.c
-        chap02/prog0211.c)
+        chap02/prog0211.c
+        chap03/prog0301.c
+        chap03/prog0302.c
+        chap03/prog0303.c
+        chap03/prog0303a.c
+        chap03/prog0304.c
+        chap03/prog0305.c)
