@@ -1,3 +1,5 @@
 *.exe
 .idea
 *~
+testes.c
+out
