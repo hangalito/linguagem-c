@@ -31,4 +31,13 @@ add_executable(linguagem_c
         chap03/prog0305.c
         chap03/prog0312.c
         chap03/prog0315.c
-        chap03/prog0316-bad.c)
+        chap03/prog0316-bad.c
+        chap04/prog0401.c
+        chap04/prog0402.c
+        chap04/prog0403.c
+        chap04/prog0404.c
+        chap04/prog0405.c
+        chap04/prog0406.c
+        chap04/prog0407.c
+        chap04/prog0408.c
+        chap04/prog0409.c)
