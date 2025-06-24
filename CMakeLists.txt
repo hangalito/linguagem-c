@@ -40,4 +40,8 @@ add_executable(linguagem_c
         chap04/prog0406.c
         chap04/prog0407.c
         chap04/prog0408.c
-        chap04/prog0409.c)
+        chap04/prog0409.c
+        chap04/prog0411.c
+        chap04/prog0412.c
+        chap04/prog0413.c
+        chap04/prog0414.c)
