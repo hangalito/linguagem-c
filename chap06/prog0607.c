@@ -1,52 +1,67 @@
 #include <stdio.h>
-#define DIM 3
+
 #define SPACE ' '
+#define DIM 3
 
 void init(char s[][DIM])
 {
-    int i, j;
-    for (i = 0; i < DIM; i++)
-        for (j = 0; j < DIM; j++)
-            s[i][j] = 0;
+    for (int i = 0; i < DIM; i++)
+        for (int j = 0; j < DIM; j++)
+            s[i][j] = SPACE;
 }
 
 void show(char s[DIM][DIM])
 {
-    int i, j;
-    for (i = 0; i < DIM; i++)
+    for (int i = 0; i < DIM; i++)
     {
-        for (j = 0; j < DIM; ++j)
-            printf("%c  %c", s[i][j], j == DIM - 1 ? ' ' : '|');
-        if (i != DIM - 1) printf("\n-----------");
+        for (int j = 0; j < DIM; j++)
+            printf("%c %c", s[i][j], j == DIM - 1 ? ' ' : '|');
+        if (i != DIM - 1)printf("\n---------");
         putchar('\n');
     }
 }
 
+void evaluate(char s[DIM][DIM], char ch)
+{
+
+}
+
 main()
 {
-    char velha[DIM][DIM];
+    char ticktacktoe[DIM][DIM];
     int posx, posy;
     char ch = '0';
     int n_plays = 0;
 
-    init(velha);
+    init(ticktacktoe);
     while (1)
     {
-        show(velha);
-        printf("Enter a game line row position of the game: ");
+        show(ticktacktoe);
+        printf("Enter the position to play: ");
         scanf("%d %d", &posx, &posy);
+        posx--;
+        posy--;
 
-        if (velha[posx][posy] == SPACE)
+        if (ticktacktoe[posx][posy] == SPACE)
         {
-            velha[posx][posy] = ch = (ch == '0') ? 'X' : '0';
+            ticktacktoe[posx][posy] = ch = (ch == '0') ? 'X' : '0';
             n_plays++;
         }
         else
-        {
             printf("Position already occupied\nPlay again!!!\n");
-            if (n_plays == DIM * DIM)
-                break;
+        if (n_plays == DIM * DIM)
+            break;
+
+        if (
+            (ticktacktoe[0][0] == ch && ticktacktoe[0][1] == ch && ticktacktoe[0][2] == ch) ||
+            (ticktacktoe[1][0] == ch && ticktacktoe[1][1] == ch && ticktacktoe[1][2] == ch) ||
+            (ticktacktoe[2][0] == ch && ticktacktoe[2][1] == ch && ticktacktoe[2][2] == ch)
+        )
+        {
+            show(ticktacktoe);
+            printf("Player %c wins\n", ch);
+            break;
         }
     }
-    show(velha);
+    show(ticktacktoe);
 }
