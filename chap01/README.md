@@ -1,4 +1,4 @@
-Capítulo 1 - O Meu Primeiro Programa
+Capítulo 1: O Meu Primeiro Programa
 ============================================================
 
 # Objectivos

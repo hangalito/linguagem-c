@@ -1,4 +1,4 @@
-Capítulo 5 - Funções e Procedimentos
+Capítulo 5: Funções e Procedimentos
 ============================================================
 
 # Objectivos

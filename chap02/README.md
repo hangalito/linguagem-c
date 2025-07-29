@@ -1,4 +1,4 @@
-Capítulo 2 - Tipos de Dados Básicos
+Capítulo 2: Tipos de Dados Básicos
 ============================================================
 
 # Objectivos

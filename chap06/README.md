@@ -1,4 +1,4 @@
-Capítulo 6 - Vetores
+Capítulo 6: Vetores
 ============================================================
 
 # Objectivos
